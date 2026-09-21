@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+header .connexion {
+    background-color: #F5871F;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero input {
+    display: block;
+    margin: 0 auto 24px;
+    padding: 10px 16px;
+    width: 300px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.hero h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #6B7280;
+    margin-bottom: 4px;
+}
+
+.hero p {
+    color: #6B7280;
+    margin-bottom: 24px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-primary {
+    background-color: #F5871F;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #1A1A1A;
+    border: 1px solid #E5E7EB;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.cers {
+    padding: 40px 48px;
+}
+
+.cers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.cers-header p {
+    color: #6B7280;
+    max-width: 500px;
+}
+
+.cer-card {
+    width: 300px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cer-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.cer-info {
+    padding: 16px;
+}
+
+.cer-info h3 {
+    margin: 8px 0;
+}
+
+.cer-desc {
+    color: #6B7280;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.consult {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #E5E7EB;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.cer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.cer-card {
+    width: auto;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 48px;
+    background-color: #F9FAFB;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 8px;
+    color: #6B7280;
+}
+.auth-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #F5871F, #FDE9D9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.auth-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.auth-card h1 {
+    margin-bottom: 24px;
+}
+
+.auth-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.auth-card input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+}
+
+.auth-card .forgot {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.auth-card .btn-primary {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.auth-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+}
+.auth-card select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+}
+
+.auth-form {
+    flex: 1;
+}
+
+.auth-illustration {
+    flex: 1;
+}
+
+.auth-illustration img {
+    width: 100%;
+}
+.page-header {
+    padding: 32px 48px 0;
+}
+
+.cers-layout {
+    display: flex;
+    gap: 32px;
+    padding: 24px 48px;
+    align-items: flex-start;
+}
+
+.filters {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.filters h3 {
+    font-size: 15px;
+    margin: 16px 0 8px;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.cers-layout .cer-grid {
+    flex: 1;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gestion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 48px 0;
+}
+
+.cer-table {
+    width: calc(100% - 96px);
+    margin: 24px 48px;
+    border-collapse: collapse;
+}
+
+.cer-table th,
+.cer-table td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.cer-table th {
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.btn-delete {
+    background-color: white;
+    border: 1px solid #EF4444;
+    color: #EF4444;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-box {
+    background-color: white;
+    padding: 32px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.modal-box input,
+.modal-box select,
+.modal-box textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+
+    header nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .hero {
+        padding: 32px 16px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero input {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .cer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cers {
+        padding: 24px 16px;
+    }
+
+    .cers-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .cers-layout {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .filters {
+        width: 100%;
+    }
+
+    .cers-layout .cer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        padding: 32px 20px;
+    }
+
+    .auth-card {
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .auth-illustration {
+        display: none;
+    }
+
+    .auth-container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    .cer-table {
+        display: block;
+        overflow-x: auto;
+        width: calc(100% - 32px);
+        margin: 16px;
+    }
+}

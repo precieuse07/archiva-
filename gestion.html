@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archiva - Gestion de CER</title>
+   <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Archiva Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cers.html">CERs</a></li>
+                <li><a href="favoris.html">Mes CER Favoris</a></li>
+                <li><a href="gestion.html">Gestion de CER</a></li>
+            </ul>
+            <button class="connexion">Connexion</button>
+        </nav>
+    </header>
+
+   <main>
+    <section class="page-header gestion-header">
+        <h1>Gérer mes CERs</h1>
+        <button class="btn-primary" onclick="document.getElementById('modal-add-cer').style.display='flex'">Ajouter un CER</button>
+    </section>
+
+    <table class="cer-table">
+        <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Spécialité</th>
+                <th>Niveau</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Prosit 4.1 Développement avancé</td>
+                <td>Développement web</td>
+                <td>X4</td>
+                <td>12/07/2024</td>
+                <td><button class="btn-delete">Supprimer</button></td>
+            </tr>
+            <tr>
+                <td>Prosit 2.2 Modélisation UML</td>
+                <td>Conception logicielle</td>
+                <td>X2</td>
+                <td>10/07/2024</td>
+                <td><button class="btn-delete">Supprimer</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="modal-add-cer" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" onclick="document.getElementById('modal-add-cer').style.display='none'">✕</button>
+            <h2>Ajouter un nouveau CER</h2>
+
+            <label for="titre">Titre du CER</label>
+            <input type="text" id="titre" placeholder="Titre du CER">
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" placeholder="Nom">
+
+            <label for="niveau-cer">Niveaux</label>
+            <select id="niveau-cer">
+                <option>X1</option>
+                <option>X2</option>
+                <option>X3</option>
+            </select>
+
+            <label for="domaine">Domaine de spécialité</label>
+            <select id="domaine">
+                <option>Développement web</option>
+                <option>Réseaux</option>
+                <option>Base de données</option>
+            </select>
+
+            <label for="description">Description du CER</label>
+            <textarea id="description" rows="4" placeholder="Entrer une description"></textarea>
+
+            <button class="btn-primary">Enregistrer</button>
+        </div>
+    </div>
+</main>
+
+    <footer>
+        <div class="footer-col">
+            <img src="assets/images/logo.png" alt="Archiva Logo">
+        </div>
+        <div class="footer-col">
+            <p>Accueil</p>
+            <p>CERs</p>
+            <p>Mes CERs favoris</p>
+            <p>Gestion de CER</p>
+        </div>
+        <div class="footer-col">
+            <h4>Social Profiles</h4>
+            <p>Facebook · Twitter · Instagram</p>
+        </div>
+    </footer>
+
+</body>
+</html>
